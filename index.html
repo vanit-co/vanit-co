@@ -1,94 +1,281 @@
+<!doctype html>
 <html lang="en">
   <head>
 
-    <title>Vanit</title>
+    <title>Vanit · Lichen, the IoT orchestrator for industrial sites</title>
 
     <meta charset="utf-8">
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vanit builds Lichen, an IoT orchestrator that reads industrial devices, keeps their history, raises alarms and automates the work of a site, on your own infrastructure.">
 
-    <link rel="alternate" hreflang="pt-BR" href="//www.vanit.co/pt-br" title="Portuguese (Brazil) | Portuguese (Brazil)">
+    <link rel="alternate" hreflang="en" href="https://www.vanit.co/">
+    <link rel="alternate" hreflang="pt-BR" href="https://www.vanit.co/pt-br/">
+    <link rel="alternate" hreflang="x-default" href="https://www.vanit.co/">
 
-    <link rel="shortcut icon" type="image/png" href="static/images/favicon.ico">
+    <link rel="shortcut icon" type="image/png" href="/static/images/favicon.ico">
 
-    <link href="static/css/screen.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link href="/static/css/screen.css" rel="stylesheet">
 
   </head>
-  <body class="bg-[#011031]">
+  <body>
 
-    <div class="section fixed top-0 w-full bg-white shadow-xl">
-      <div class="section-content py-10">
-        <img class="w-180" src="static/images/vanit-logo.svg" title="Vanit" alt="Vanit" />
+    <header class="section sticky top-0 z-50 border-b border-line bg-white/95 backdrop-blur">
+      <div class="section-content flex h-72 items-center justify-between gap-24">
+        <a href="/" class="shrink-0"><img class="w-150 md:w-170" src="/static/images/vanit-logo.svg" alt="Vanit" width="170" height="28" /></a>
+        <nav class="hidden items-center gap-32 md:flex">
+          <a class="nav-link" href="#lichen">Lichen</a>
+          <a class="nav-link" href="#delivery">Delivery</a>
+          <a class="nav-link" href="#company">Company</a>
+        </nav>
+        <div class="flex items-center gap-20">
+          <div class="lang text-sm"><a href="/" aria-current="page">EN</a> <span class="text-line">|</span> <a href="/pt-br/" hreflang="pt-BR">PT</a></div>
+          <a href="#contact" class="btn btn-outline hidden sm:inline-flex py-9 px-18">Contact</a>
+        </div>
       </div>
-    </div>
+    </header>
 
-    <div class="h-50 w-full"></div>
-
-    <div class="section bg-linear-to-t from-sky-600 to-slate-700">
-      <div class="section-content py-50 text-white">
-        <h1 class="font-bold text-3xl">Bridging Industrial Automation with Cutting-Edge Technology</h1>
-        <h2 class="font-bold text-2xl">Empowering Industries with High-Performance Software Solutions</h2>
-        <p>At Vanit, we specialize in building advanced industrial automation, IoT, and data-driven solutions that push the boundaries of efficiency, scalability, and intelligence. With deep expertise in software engineering, cloud-native infrastructure, real-time data processing, and modern web technologies, we provide powerful platforms designed to handle the most demanding industrial and IoT applications.</p>
+    <section class="section hero on-dark">
+      <div class="section-content grid items-center gap-56 py-72 md:py-112 lg:grid-cols-12">
+        <div class="lg:col-span-6 xl:col-span-5">
+          <span class="eyebrow">Industrial software since 2008</span>
+          <h1 class="heading mt-20 text-4xl lg:text-[44px]">Every field device, read, recorded and put to work.</h1>
+          <p class="lead mt-24">Vanit builds Lichen, an IoT orchestrator that reads your equipment, keeps its history, raises its alarms and runs the work your site needs done, on your own infrastructure.</p>
+          <div class="mt-36 flex flex-wrap gap-12">
+            <a href="#lichen" class="btn btn-primary">Discover Lichen</a>
+            <a href="#contact" class="btn btn-ghost">Talk to us</a>
+          </div>
+        </div>
+        <div class="lg:col-span-6 xl:col-span-7">
+          <div class="frame frame-dark">
+            <div class="frame-bar"><span></span><span></span><span></span></div>
+            <img src="/static/images/lichen/dashboard.webp" width="1600" height="1000" alt="The Lichen dashboard: open alarms with their trends, events of the day, alarms per day and the assets with their live values" />
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
 
-
-    <div class="section bg-[#f5f7fa]">
-      <div class="section-content py-50">
-        <h2 class="font-bold text-2xl text-[#214478]">Expertise Across Multiple Programming Languages</h2>
-        <p>Our team is highly skilled in multiple programming languages, ensuring we use the best tools for the job. Whether it's system-level programming, high-performance backend services, or dynamic web applications, we have the expertise to develop robust and scalable solutions.</p>
-      </div>
-    </div>
-
-
-    <div class="section bg-white">
-      <div class="section-content py-50">
-        <h2 class="font-bold text-2xl text-[#214478]">Harnessing the Power of Modern Tools and Infrastructure</h2>
-        <p>We leverage the most modern cloud and containerization technologies to ensure our systems are resilient, scalable, and easy to manage. Our expertise enables us to deploy and orchestrate applications that can handle massive amounts of data with minimal downtime. Whether you need a high-availability system for real-time industrial monitoring, high-performance on-premise solutions or a cloud-based IoT infrastructure, we have the tools and knowledge to bring it to life.</p>
-      </div>
-    </div>
-
-
-    <div class="section bg-[#f5f7fa]">
-      <div class="section-content py-50">
-        <h2 class="font-bold text-2xl text-[#214478]">Seamless Integration with Industrial Protocols</h2>
-        <p>Industrial automation requires precise and reliable communication between machines and systems. At Vanit, we have in-depth experience with a range of industrial protocols and standards, including Modbus, OPC UA, Ethernet/IP, and Profinet. We build robust drivers and interfaces for industrial machines. Our solutions ensure seamless interoperability between legacy systems and modern software architectures, allowing for enhanced efficiency and automation.</p>
-      </div>
-    </div>
-
-
-    <div class="section bg-white">
-      <div class="section-content py-50">
-        <h2 class="font-bold text-2xl text-[#214478]">IoT Data Acquisition at Unparalleled Scale</h2>
-        <p>We specialize in developing platforms that acquire, process, and analyze data from thousands of IoT sensors with ultra-low latency.</p>
-        <p>By utilizing parallel and concurrent computing techniques, we ensure real-time data ingestion and processing, allowing businesses to make informed decisions faster. Our backend solutions aggregate and sanitize data, ensuring accuracy and reliability, while advanced machine learning techniques help uncover valuable insights for predictive maintenance, anomaly detection, and process optimization.</p>
-      </div>
-    </div>
-
-
-    <div class="section bg-[#f5f7fa]">
-      <div class="section-content py-50">
-        <h2 class="font-bold text-2xl text-[#214478]">Empowering Industries with Modern Web Solutions</h2>
-        <p>High-Performance Web Consoles and Visualization Dashboards</p>
-        <p>The complexity of industrial and IoT data requires intuitive, dynamic, and responsive web interfaces to maximize usability and operational efficiency. Vanit creates lightweight, high-performance web applications.</p>
-      </div>
-    </div>
-
-
-    <div class="section bg-white">
-      <div class="section-content py-50">
-        <h2 class="font-bold text-2xl text-[#214478]">Partner with Vanit for Future-Ready Solutions</h2>
-        <p>In an ever-evolving technological landscape, businesses must adapt and innovate to stay competitive. At Vanit, we are committed to helping industries harness the power of software, automation, and data-driven insights to achieve their goals. Our expertise spans multiple domains, ensuring that our solutions are robust, future-proof, and tailored to your unique needs.</p>
-        <br />
-        <a href="mailto:vanit@vanit.co" class="py-12 px-25 bg-[#00a651] text-white no-underline rounded-sm">Contact us</a>
-      </div>
-    </div>
-
-    <div class="section py-24 text-white">
+    <section class="section border-b border-line bg-white">
       <div class="section-content">
-        <p>&copy; 2008 - 2025 Vanit Tecnologia</p>
+        <div class="grid gap-px bg-line sm:grid-cols-2 lg:grid-cols-4">
+          <div class="bg-white px-8 py-32 lg:px-28">
+            <h3 class="text-lg font-bold text-navy">Industrial protocols</h3>
+            <p class="mt-8 text-sm leading-relaxed text-muted">Modbus, OPC UA, EtherNet/IP, Siemens S7, MQTT, BACnet/IP, DNP3, SNMP, HTTP APIs and ICMP.</p>
+          </div>
+          <div class="bg-white px-8 py-32 lg:px-28">
+            <h3 class="text-lg font-bold text-navy">Edge, offline-ready</h3>
+            <p class="mt-8 text-sm leading-relaxed text-muted">Gateways read, alarm and run jobs with no server in reach.</p>
+          </div>
+          <div class="bg-white px-8 py-32 lg:px-28">
+            <h3 class="text-lg font-bold text-navy">ISA-18.2 alarms</h3>
+            <p class="mt-8 text-sm leading-relaxed text-muted">Every alarm journaled and measured against ISA-18.2 and EEMUA 191.</p>
+          </div>
+          <div class="bg-white px-8 py-32 lg:px-28">
+            <h3 class="text-lg font-bold text-navy">Enrolled by QR code</h3>
+            <p class="mt-8 text-sm leading-relaxed text-muted">A one-time QR code installs and enrols an edge gateway with one line, and remote upgrades roll back on their own.</p>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
+
+    <section id="lichen" class="section bg-mist">
+      <div class="section-content py-80 md:py-112">
+
+        <div class="max-w-[720px]">
+          <span class="eyebrow">Lichen</span>
+          <h2 class="heading mt-16 text-3xl md:text-4xl">One platform beneath your operations</h2>
+          <p class="lead mt-20">Lichen sits between your devices and your business systems. It keeps the connections, the history, the alarms and the automation running, and answers every system in front of it through one API.</p>
+        </div>
+
+        <div id="connectivity" class="mt-72 grid items-center gap-40 md:mt-96 lg:grid-cols-12 lg:gap-64">
+          <div class="lg:col-span-5">
+            <h3 class="heading text-2xl">Connect any site</h3>
+            <p class="lead mt-12 text-base">Read PLCs, meters and brokers over the protocols the plant already speaks, from the server or from an edge gateway at the site.</p>
+            <ul class="ticks mt-24">
+              <li>Modbus TCP and RTU, OPC UA, EtherNet/IP, Siemens S7, MQTT with Sparkplug B, BACnet/IP, DNP3, SNMP and HTTP APIs</li>
+              <li>Edge gateways installed with one line, upgraded remotely, rolled back on failure</li>
+              <li>Every link measured: uptime, response time and failed reads</li>
+            </ul>
+          </div>
+          <div class="lg:col-span-7">
+            <div class="frame"><div class="frame-bar"><span></span><span></span><span></span></div>
+              <img loading="lazy" src="/static/images/lichen/connectivity.webp" width="1360" height="850" alt="A gateway's link health: response time of each PLC over a week, and data quality per asset" />
+            </div>
+          </div>
+        </div>
+
+        <div id="history" class="mt-80 grid items-center gap-40 md:mt-112 lg:grid-cols-12 lg:gap-64">
+          <div class="lg:order-2 lg:col-span-5">
+            <h3 class="heading text-2xl">History you can trust</h3>
+            <p class="lead mt-12 text-base">Every point is kept as it changes, with its quality, and queried by the minute or by day, week and month in your time zone.</p>
+            <ul class="ticks mt-24">
+              <li>Sampling and recording set apart, with deadband and heartbeat</li>
+              <li>Time-weighted averages, counters, run hours and starts</li>
+              <li>Live values and trends for every asset</li>
+            </ul>
+          </div>
+          <div class="lg:order-1 lg:col-span-7">
+            <div class="frame"><div class="frame-bar"><span></span><span></span><span></span></div>
+              <img loading="lazy" src="/static/images/lichen/trends.webp" width="1360" height="850" alt="Trends of a pump: bearing temperature, motor current, hours run and running state over 24 hours, with alarm limits" />
+            </div>
+          </div>
+        </div>
+
+        <div id="alarms" class="mt-80 grid items-center gap-40 md:mt-112 lg:grid-cols-12 lg:gap-64">
+          <div class="lg:col-span-5">
+            <h3 class="heading text-2xl">Alarms that stand up to an audit</h3>
+            <p class="lead mt-12 text-base">Alarms are decided where the point is read, even with no server in reach, and measured the way ISA-18.2 measures them.</p>
+            <ul class="ticks mt-24">
+              <li>Thresholds with hysteresis and debounce, or a rule over several points</li>
+              <li>Acknowledgement, shelving, and escalation to your paging system</li>
+              <li>A journal of floods, bad actors, chattering and time to acknowledge</li>
+            </ul>
+          </div>
+          <div class="lg:col-span-7">
+            <div class="frame"><div class="frame-bar"><span></span><span></span><span></span></div>
+              <img loading="lazy" src="/static/images/lichen/alarm-journal.webp" width="1360" height="850" alt="The alarm journal: alarms raised a day, time in flood, time to acknowledge and the bad actors of the last 14 days" />
+            </div>
+          </div>
+        </div>
+
+        <div id="condition" class="mt-80 grid items-center gap-40 md:mt-112 lg:grid-cols-12 lg:gap-64">
+          <div class="lg:order-2 lg:col-span-5">
+            <h3 class="heading text-2xl">See failures coming</h3>
+            <p class="lead mt-12 text-base">Lichen ranks every watched point by how soon its trend reaches the limit, so the maintenance visit is planned before the failure.</p>
+            <ul class="ticks mt-24">
+              <li>The last fortnight's trend held against each alarm limit</li>
+              <li>A point against its own baseline, this week against last</li>
+              <li>Hour by hour, day by day, to find when a problem starts</li>
+            </ul>
+          </div>
+          <div class="lg:order-1 lg:col-span-7">
+            <div class="frame"><div class="frame-bar"><span></span><span></span><span></span></div>
+              <img loading="lazy" src="/static/images/lichen/condition.webp" width="1360" height="850" alt="A pump's vibration over 14 days drifting past its limit, compared with its first week and with motor current" />
+            </div>
+          </div>
+        </div>
+
+        <div id="automation" class="mt-80 grid items-center gap-40 md:mt-112 lg:grid-cols-12 lg:gap-64">
+          <div class="lg:col-span-5">
+            <h3 class="heading text-2xl">Automate what the site needs done</h3>
+            <p class="lead mt-12 text-base">Jobs start on a schedule, on a changing value, on an alarm or on request, and every run is kept.</p>
+            <ul class="ticks mt-24">
+              <li>Calls to other systems, scripts and point writes, retried with backoff</li>
+              <li>Commands written at most once and confirmed by reading the device back</li>
+              <li>Scripts and services in Python or TypeScript, supervised by Lichen</li>
+            </ul>
+          </div>
+          <div class="lg:col-span-7">
+            <div class="frame"><div class="frame-bar"><span></span><span></span><span></span></div>
+              <img loading="lazy" src="/static/images/lichen/job-runs.webp" width="1360" height="850" alt="Job runs: each run's job, gateway, trigger, status and duration" />
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="delivery" class="section bg-white">
+      <div class="section-content py-80 md:py-112">
+        <div class="max-w-[720px]">
+          <span class="eyebrow">Delivery</span>
+          <h2 class="heading mt-16 text-3xl md:text-4xl">Installed on your infrastructure. Operated by us.</h2>
+        </div>
+        <div class="mt-48 grid gap-24 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="card">
+            <h3>Your network, your data</h3>
+            <p>One installation per customer, on premises or in your private cloud. Gateways only dial out: no inbound ports at the site.</p>
+          </div>
+          <div class="card">
+            <h3>Run by Vanit</h3>
+            <p>Our engineers commission each site, write its integrations and keep it running, remotely and on a schedule you approve.</p>
+          </div>
+          <div class="card">
+            <h3>Open to your systems</h3>
+            <p>Your SCADA, ERP, BI and applications read live values, history and alarms through one JSON-RPC API.</p>
+          </div>
+          <div class="card">
+            <h3>Predictable pricing</h3>
+            <p>A flat price per site. No devices, points or messages to count.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="company" class="section bg-mist">
+      <div class="section-content grid gap-48 py-80 md:py-112 lg:grid-cols-12">
+        <div class="lg:col-span-5">
+          <span class="eyebrow">Vanit Technology</span>
+          <h2 class="heading mt-16 text-3xl md:text-4xl">Industrial software engineering since 2008</h2>
+          <p class="lead mt-20">We are a software company for industrial automation and IoT. We write the drivers, the data platforms and the consoles ourselves, and put them into production at our customers' sites.</p>
+        </div>
+        <div class="grid gap-24 sm:grid-cols-2 lg:col-span-7">
+          <div class="card">
+            <h3>Industrial protocols</h3>
+            <p>Drivers written in-house that bridge legacy equipment and modern software.</p>
+          </div>
+          <div class="card">
+            <h3>Data acquisition</h3>
+            <p>Platforms that read field data continuously, clean it and keep its history.</p>
+          </div>
+          <div class="card">
+            <h3>Systems engineering</h3>
+            <p>On-premise and private-cloud deployments, reproducible and easy to operate.</p>
+          </div>
+          <div class="card">
+            <h3>Web applications</h3>
+            <p>Fast, focused consoles for the operators and engineers who run a plant.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section bg-navy on-dark">
+      <div class="section-content flex flex-col items-start justify-between gap-32 py-72 md:flex-row md:items-center">
+        <div>
+          <h2 class="heading text-3xl">Let's talk about your site.</h2>
+          <p class="lead mt-12">Tell us what you need to connect, record or automate.</p>
+        </div>
+        <div class="flex shrink-0 flex-wrap gap-12">
+          <a href="https://wa.me/5531984567068?text=I%20would%20like%20to%20know%20more%20about%20the%20Lichen%20suite" target="_blank" rel="noopener" class="btn btn-primary"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>Chat on WhatsApp</a>
+          <a href="mailto:vanit@vanit.co" class="btn btn-ghost">vanit@vanit.co</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="section bg-navy-deep text-sm">
+      <div class="section-content grid gap-40 py-56 md:grid-cols-12">
+        <div class="md:col-span-6">
+          <img class="w-150" src="/static/images/vanit-logo-light.svg" alt="Vanit" width="150" height="25" />
+          <p class="mt-16 max-w-[360px] text-[#a9b6cc]">Industrial software and Lichen, the IoT orchestrator for industrial sites.</p>
+        </div>
+        <div class="md:col-span-3">
+          <div class="font-semibold text-white">Lichen</div>
+          <ul class="mt-12 space-y-8">
+            <li><a class="footer-link" href="#connectivity">Connectivity</a></li>
+            <li><a class="footer-link" href="#history">History</a></li>
+            <li><a class="footer-link" href="#alarms">Alarms</a></li>
+            <li><a class="footer-link" href="#condition">Condition</a></li>
+            <li><a class="footer-link" href="#automation">Automation</a></li>
+          </ul>
+        </div>
+        <div class="md:col-span-3">
+          <div class="font-semibold text-white">Vanit</div>
+          <ul class="mt-12 space-y-8">
+            <li><a class="footer-link" href="#delivery">Delivery</a></li>
+            <li><a class="footer-link" href="#company">Company</a></li>
+            <li><a class="footer-link" href="mailto:vanit@vanit.co">vanit@vanit.co</a></li>
+            <li><a class="footer-link" href="/pt-br/" hreflang="pt-BR">Português</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="section-content">
+        <div class="border-t border-white/10 py-20 text-[#7f8ea8]">&copy; 2008–2026 Vanit Tecnologia</div>
+      </div>
+    </footer>
 
   </body>
 </html>
